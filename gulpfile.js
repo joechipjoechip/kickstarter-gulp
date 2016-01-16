@@ -1,5 +1,5 @@
 require('dotenv').load();
-const config = require('./gulp/config.js');
+const config = require('./config.js');
 const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
@@ -9,9 +9,9 @@ const sass = require('gulp-sass');
 const browsersync = require('browser-sync').create();
 const notify = require('gulp-notify');
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['development']);
 
-gulp.task('serve', [
+gulp.task('development', [
   'html-watch',
   'js-watch',
   'sass-watch',
