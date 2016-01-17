@@ -1,4 +1,3 @@
-require('dotenv').load({silent: true});
 const config = require('./config.js');
 const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');

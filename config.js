@@ -1,6 +1,6 @@
 const base = {
-  src: process.env.STATIC_SRC,
-  dist: process.env.STATIC_DIST,
+  src: './src',
+  dist: './dist',
 };
 
 module.exports = {
